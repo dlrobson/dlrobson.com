@@ -63,6 +63,7 @@ const headerStyle = {
     "&:hover,&:focus": {
       color: "inherit",
       background: "transparent"
+      // background: "rgba(200, 200, 200, 0.2)",
     }
   },
   appResponsive: {
