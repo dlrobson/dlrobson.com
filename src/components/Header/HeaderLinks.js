@@ -26,47 +26,19 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      {/* <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
-      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
-          // href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-          // href="../../assets/pdf/Daniel_Robson_resume.pdf"
           href="Daniel_Robson_resume.pdf"
           color="transparent"
           target="_blank"
           className={classes.navLink}
+          
         >
-          <CloudDownload className={classes.icons} /> My Resume
+          <CloudDownload className={classes.icons} /> Resume
+          
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
           id="linkedin"
           title="Connect on Linkedin"
@@ -78,6 +50,7 @@ export default function HeaderLinks(props) {
             target="_blank"
             color="transparent"
             className={classes.navLink}
+            children="asdlfa"
           >
             <i className={classes.socialIcons + " fab fa-linkedin"} />
           </Button>
