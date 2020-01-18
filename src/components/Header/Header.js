@@ -11,8 +11,12 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import Tooltip from "@material-ui/core/Tooltip";
+
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
+import { Apps, CloudDownload } from "@material-ui/icons";
+
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
@@ -53,7 +57,7 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, rightLinksDrawer, leftLinks, leftLinksDrawer, brand, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
@@ -98,8 +102,8 @@ export default function Header(props) {
           onClose={handleDrawerToggle}
         >
           <div className={classes.appResponsive}>
-            {leftLinks}
-            {rightLinks}
+            {leftLinksDrawer}
+            {rightLinksDrawer}
           </div>
         </Drawer>
       </Hidden>
@@ -125,6 +129,8 @@ Header.propTypes = {
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
+  rightLinksDrawer: PropTypes.node,
+  leftLinksDrawer: PropTypes.node,
   brand: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,

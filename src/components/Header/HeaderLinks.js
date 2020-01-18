@@ -26,70 +26,67 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="Daniel_Robson_resume.pdf"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-          
-        >
-          <CloudDownload className={classes.icons} /> Resume
-          
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="linkedin"
-          title="Connect on Linkedin"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://www.linkedin.com/in/dlrobson"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-            children="asdlfa"
-          >
-            <i className={classes.socialIcons + " fab fa-linkedin"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="github"
-          title="Checkout my Github"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://github.com/dlrobson/"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-github"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="email"
-          title="Email me"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="mailto:dlrobson@uwaterloo.ca"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fas fa-envelope"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-    </List>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="Daniel_Robson_resume.pdf"
+                color="transparent"
+                target="_blank"
+                className={classes.navLink}
+              >
+                <CloudDownload className={classes.icons} /> Resume
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="linkedin"
+                title="Connect on Linkedin"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  href="https://www.linkedin.com/in/dlrobson"
+                  target="_blank"
+                  color="transparent"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-linkedin"} />
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="github"
+                title="Checkout my Github"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://github.com/dlrobson/"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-github"} />
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="email"
+                title="Email me"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="mailto:dlrobson@uwaterloo.ca"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fas fa-envelope"} />
+                </Button>
+              </Tooltip>
+            </ListItem>
+            </List>
   );
 }

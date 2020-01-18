@@ -5,7 +5,11 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
+import { Apps, CloudDownload } from "@material-ui/icons";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -35,11 +39,172 @@ const useStyles = makeStyles(styles);
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const navBarRightList = {
+    display: 'inline-flex',
+    flexDirection: 'row',
+    padding: 0,
+  };
   return (
     <div>
       <Header
         brand="DR"
-        rightLinks={<HeaderLinks />}
+        leftLinks={
+          <List className={classes.list} style={navBarRightList}>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                About me
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Projects
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Experience
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Contact
+              </Button>
+            </ListItem>
+          </List>
+        }
+        leftLinksDrawer={
+          <List className={classes.list}>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                About me
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Projects
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Experience
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="#pablo"
+                className={classes.navLink}
+                onClick={e => e.preventDefault()}
+                color="transparent"
+              >
+                Contact
+              </Button>
+            </ListItem>
+          </List>
+        }
+        rightLinks={ <HeaderLinks /> }
+        rightLinksDrawer={
+          <List className={classes.list}>
+            <ListItem className={classes.listItem}>
+              <Button
+                href="Daniel_Robson_resume.pdf"
+                color="transparent"
+                target="_blank"
+                className={classes.navLink}
+              >
+                <CloudDownload className={classes.icons} /> Resume
+              </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="linkedin"
+                title="Connect on Linkedin"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  href="https://www.linkedin.com/in/dlrobson"
+                  target="_blank"
+                  color="transparent"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-linkedin"} />
+                  Linkedin
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="github"
+                title="Checkout my Github"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://github.com/dlrobson/"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fab fa-github"} />
+                  Github
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+              <Tooltip
+                id="email"
+                title="Email me"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="mailto:dlrobson@uwaterloo.ca"
+                  target="_blank"
+                  className={classes.navLink}
+                >
+                  <i className={classes.socialIcons + " fas fa-envelope"} />
+                  dlrobson@uwaterloo.ca
+                </Button>
+              </Tooltip>
+            </ListItem>
+            </List>
+        }
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -48,6 +213,8 @@ export default function Components(props) {
         }}
         {...rest}
       />
+
+
       <Parallax image={require("assets/img/bg4.jpg")}>
         <div className={classes.container}>
           <GridContainer>

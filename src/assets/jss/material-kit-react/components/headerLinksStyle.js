@@ -104,7 +104,7 @@ const headerLinksStyle = theme => ({
     "&,&:hover,&:focus": {
       color: "inherit",
       textDecoration: "none",
-      display: "block",
+      display: "z",
       padding: "10px 20px"
     }
   },

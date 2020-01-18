@@ -162,6 +162,16 @@ export default function SectionNavbars() {
                     Link
                   </Button>
                 </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Link
+                  </Button>
+                </ListItem>
               </List>
             }
             rightLinks={
