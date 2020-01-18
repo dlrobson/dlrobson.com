@@ -21,7 +21,7 @@ const buttonStyle = {
     position: "relative",
     padding: "12px 3zz0px",
     margin: ".3125rem 1px",
-    fontSize: "12px",
+    fontSize: "13px",
     fontWeight: "400",
     textTransform: "uppercase",
     letterSpacing: "0",

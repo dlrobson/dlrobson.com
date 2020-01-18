@@ -39,7 +39,7 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="linkedin"
-                title="Connect on Linkedin"
+                title="linkedin.com/in/dlrobson"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -56,7 +56,7 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="github"
-                title="Checkout my Github"
+                title="github.com/dlrobson/"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -73,7 +73,7 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="email"
-                title="Email me"
+                title="dlrobson@uwaterloo.ca"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >

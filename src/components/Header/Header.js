@@ -11,12 +11,8 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
-import Tooltip from "@material-ui/core/Tooltip";
-
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
-import { Apps, CloudDownload } from "@material-ui/icons";
-
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 

@@ -39,22 +39,28 @@ const useStyles = makeStyles(styles);
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const navBarRightList = {
-    display: 'inline-flex',
-    flexDirection: 'row',
-    padding: 0,
+  const styles = {
+    navBarRightList: {
+      display: 'inline-flex',
+      flexDirection: 'row',
+      padding: 0,
+    },
   };
+
   return (
     <div>
       <Header
         brand="DR"
         leftLinks={
-          <List className={classes.list} style={navBarRightList}>
+          
+          // <List className={classes.list } style={navBarRightList}>
+          <List className={classes.list} style={styles.navBarRightList}>
             <ListItem className={classes.listItem}>
               <Button
                 href="#pablo"
                 className={classes.navLink}
                 onClick={e => e.preventDefault()}
+                onM
                 color="transparent"
               >
                 About me
@@ -152,7 +158,7 @@ export default function Components(props) {
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="linkedin"
-                title="Connect on Linkedin"
+                title="Linkedin"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -163,14 +169,14 @@ export default function Components(props) {
                   className={classes.navLink}
                 >
                   <i className={classes.socialIcons + " fab fa-linkedin"} />
-                  Linkedin
+                  linkedin.com/in/dlrobson
                 </Button>
               </Tooltip>
             </ListItem>
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="github"
-                title="Checkout my Github"
+                title="Github"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -181,14 +187,14 @@ export default function Components(props) {
                   className={classes.navLink}
                 >
                   <i className={classes.socialIcons + " fab fa-github"} />
-                  Github
+                  github.com/dlrobson
                 </Button>
               </Tooltip>
             </ListItem>
             <ListItem className={classes.listItem}>
               <Tooltip
                 id="email"
-                title="Email me"
+                title="Email"
                 placement={window.innerWidth > 959 ? "top" : "left"}
                 classes={{ tooltip: classes.tooltip }}
               >
@@ -232,12 +238,12 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        <SectionNavbars />
+        {/* <SectionNavbars />
         <SectionTabs />
         <SectionPills />
-        <SectionNotifications />
+        <SectionNotifications /> */}
         <SectionTypography />
-        <SectionJavascript />
+        {/* <SectionJavascript />
         <SectionCarousel />
         <SectionCompletedExamples />
         <SectionLogin />
@@ -249,7 +255,7 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload /> */}
       </div>
       <Footer />
     </div>
