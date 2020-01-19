@@ -38,7 +38,7 @@ const componentsStyle  = theme => ({
       background: "rgba(200, 200, 200, 0.2)",
     },
     [theme.breakpoints.down("sm")]: {
-      width: "calc(100% - 10px)",
+      width: "calc(100% - 30px)",
       marginLeft: "15px",
       marginBottom: "8px",
       marginTop: "8px",
