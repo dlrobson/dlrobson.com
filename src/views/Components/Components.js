@@ -1,26 +1,20 @@
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Tooltip from "@material-ui/core/Tooltip";
-// @material-ui/icons
-import { CloudDownload } from "@material-ui/icons";
 import styles from "assets/jss/material-kit-react/views/components.js";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 // core components
 import Header from "components/Header/Header.js";
-// sections for this page
-import HeaderRightLinks from "components/Header/HeaderRightLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
-import React from "react";
 import HeaderLeftLinks from "components/Header/HeaderLeftLinks.js";
 import HeaderLeftLinksDrawer from "components/Header/HeaderLeftLinksDrawer.js";
+// sections for this page
+import HeaderRightLinks from "components/Header/HeaderRightLinks.js";
 import HeaderRightLinksDrawer from "components/Header/HeaderRightLinksDrawer.js";
+import Parallax from "components/Parallax/Parallax.js";
+import React from "react";
 import SectionTypography from "./Sections/SectionTypography.js";
 
 
