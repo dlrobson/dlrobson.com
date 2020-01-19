@@ -13,7 +13,6 @@ const useStyles = makeStyles(styles);
 export default function HeaderLeftLinksDrawer(props) {
   const classes = useStyles();
   return (
-    <List className={classes.list} style={styles.navBarRightList}>
     <List className={classes.list}>
             <ListItem className={classes.listItem}>
               <Button
