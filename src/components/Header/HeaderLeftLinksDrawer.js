@@ -12,15 +12,9 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLeftLinksDrawer(props) {
   const classes = useStyles();
-  const styles = {
-    navBarRightList: {
-      display: 'inline-flex',
-      flexDirection: 'row',
-      padding: 0,
-    },
-  };
   return (
     <List className={classes.list} style={styles.navBarRightList}>
+    <List className={classes.list}>
             <ListItem className={classes.listItem}>
               <Button
                 href="#pablo"
