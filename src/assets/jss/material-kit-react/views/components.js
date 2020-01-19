@@ -1,5 +1,4 @@
-import { defaultFont, container } from "assets/jss/material-kit-react.js";
-import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
+import { container } from "assets/jss/material-kit-react.js";
 
 const componentsStyle  = theme => ({
   listItem: {
