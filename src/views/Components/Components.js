@@ -25,6 +25,7 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
+      {/* Navigation Bar */}
       <Header
         brand="DR"
         leftLinks={ <HeaderLeftLinks /> }
@@ -39,6 +40,8 @@ export default function Components(props) {
         }}
         {...rest}
       />
+
+      {/* First Image Background */}
       <Parallax image={require("assets/img/bg4.jpg")}>
       {/* <Parallax> */}
         <div className={classes.container}>
@@ -58,6 +61,7 @@ export default function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionTypography />
       </div>
+
       <Footer />
     </div>
   );
