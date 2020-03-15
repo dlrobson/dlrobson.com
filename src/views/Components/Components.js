@@ -28,9 +28,9 @@ export default function Components(props) {
       {/* Navigation Bar */}
       <Header
         brand="DR"
-        leftLinks={ <HeaderLeftLinks /> }
+        // leftLinks={ <HeaderLeftLinks /> }
         rightLinks={ <HeaderRightLinks /> }
-        leftLinksDrawer={ <HeaderLeftLinksDrawer /> }
+        // leftLinksDrawer={ <HeaderLeftLinksDrawer /> }
         rightLinksDrawer={ <HeaderRightLinksDrawer /> }
         fixed
         color="transparent"
@@ -59,7 +59,7 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionTypography />
+        {/* <SectionTypography /> */}
       </div>
 
       <Footer />
