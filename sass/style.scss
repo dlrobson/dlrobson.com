@@ -520,6 +520,15 @@ header{
 }
 
 
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
 
 //ABOUT
 .about-desc{
@@ -792,9 +801,13 @@ header{
 		width: 55%;
 		padding: 3em 2em 3em 0;
 	}
+	.two-third{
+		width: 75%;
+		padding: 3em 2em 3em 0;
+	}
 	.one-forth{
 		width: 45%;
-		.one-third,.one-forth{
+		.one-third,.one-forth,.two-third{
 		display: inline-block;
 		@media screen and(max-width: $screen-sm){
 			height: 400px;
