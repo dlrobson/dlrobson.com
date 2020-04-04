@@ -842,6 +842,17 @@ header {
 #colorlib-blog .owl-carousel {
   z-index: 0; }
 
+#colorlib-blog .owl-carousel img{
+  z-index: 0; }
+#colorlib-about .owl-carousel {
+  /* display: flex; */
+  z-index: 0; }
+
+#colorlib-about .owl-carousel img{
+  /* width: auto; */
+  /* height: 500px; */
+  z-index: 0; }
+
 #colorlib-blog .owl-carousel .owl-stage-outer {
   z-index: -1; }
 
